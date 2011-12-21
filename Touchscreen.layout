@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="ConfigPlus.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="214" topLine="0" />
+	</File>
+	<File name="ConfigPlus.h" open="0" top="0" tabpos="9">
+		<Cursor position="437" topLine="6" />
+	</File>
+	<File name="D2V.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="539" topLine="0" />
+	</File>
+	<File name="D2V.h" open="1" top="0" tabpos="3">
+		<Cursor position="150" topLine="1" />
+	</File>
+	<File name="DataReader_Base.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="123" topLine="0" />
+	</File>
+	<File name="DataReader_Base.h" open="1" top="0" tabpos="9">
+		<Cursor position="225" topLine="0" />
+	</File>
+	<File name="DataReader_File.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="431" topLine="0" />
+	</File>
+	<File name="DataReader_File.h" open="1" top="0" tabpos="6">
+		<Cursor position="277" topLine="0" />
+	</File>
+	<File name="Debug/debug.h" open="0" top="0" tabpos="12">
+		<Cursor position="446" topLine="0" />
+	</File>
+	<File name="Elo.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="81" topLine="0" />
+	</File>
+	<File name="Elo.h" open="0" top="0" tabpos="8">
+		<Cursor position="267" topLine="0" />
+	</File>
+	<File name="L3Message.h" open="0" top="0" tabpos="14">
+		<Cursor position="237" topLine="0" />
+	</File>
+	<File name="Xcom.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1991" topLine="76" />
+	</File>
+	<File name="Xcom.h" open="1" top="0" tabpos="1">
+		<Cursor position="385" topLine="6" />
+	</File>
+	<File name="elo_consts.h" open="1" top="0" tabpos="10">
+		<Cursor position="212" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="279" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Touchscreen" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Touchscreen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="/home/kefir/Projects/xdotool/elo-logs/elo-lines.log" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="xdotool/libxdo.so" />
+					<Add library="/usr/lib/libserial.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Touchscreen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="xdotool/libxdo.so" />
+					<Add library="/usr/lib/libserial.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="xdotool/libxdo.so" />
+		<Unit filename="xdotool/xdo.h" />
+		<Unit filename="ConfigFile/ConfigFile.cpp" />
+		<Unit filename="ConfigFile/ConfigFile.h" />
+		<Unit filename="ConfigPlus.cpp" />
+		<Unit filename="ConfigPlus.h" />
+		<Unit filename="D2V.cpp" />
+		<Unit filename="D2V.h" />
+		<Unit filename="DataReader_Base.cpp" />
+		<Unit filename="DataReader_Base.h" />
+		<Unit filename="DataReader_File.cpp" />
+		<Unit filename="DataReader_File.h" />
+		<Unit filename="DataReader_Serial.cpp" />
+		<Unit filename="DataReader_Serial.h" />
+		<Unit filename="Debug/debug.h" />
+		<Unit filename="Elo.cpp" />
+		<Unit filename="Elo.h" />
+		<Unit filename="L3Message.h" />
+		<Unit filename="Xcom.cpp" />
+		<Unit filename="Xcom.h" />
+		<Unit filename="elo_consts.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sample.cfg" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
