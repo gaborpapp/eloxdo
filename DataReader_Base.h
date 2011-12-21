@@ -8,10 +8,10 @@
 class DataReader_Base
 {
 public:
-	DataReader_Base(Elo *elo_, std::basic_istream<char> *inputFileP_,bool async_);
 	int read();
 	virtual ~DataReader_Base();
 protected:
+	DataReader_Base(Elo *elo_, std::basic_istream<char> *inputFileP_,bool async_);
 	Elo *_elo;
 	int _packetno;
 	char _packet[ELO_PACKET_SIZE-1];
