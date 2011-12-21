@@ -62,13 +62,13 @@ void Xcom::action(L3Message m_){
 
 	if (m_._event == ELO_PRESS){
 		DEBUG_STRING("PRESS\n");
-		//xdo_mousedown(_myxdo, CURRENTWINDOW, 1);
+		xdo_mousedown(_myxdo, CURRENTWINDOW, 1);
 		//::: _mouseDownReceived = true;
 	}
 	if (m_._event == ELO_RELEASE){
 		DEBUG_STRING("RELEASE\n");
 		//::: if(_mouseDownReceived)
-			//xdo_mouseup(_myxdo, CURRENTWINDOW, 1);
+			xdo_mouseup(_myxdo, CURRENTWINDOW, 1);
 		//::: else
 				//::: xdo_click(_myxdo, CURRENTWINDOW, 1);
 		//::: _mouseDownReceived = false;

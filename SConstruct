@@ -1,6 +1,6 @@
 # -*- mode: python; -*-
 Target = 'eloxdo'
-Debug = 1
+Debug = 0
 
 env = Environment()
 

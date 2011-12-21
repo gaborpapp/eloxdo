@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 {
 	if (argc<4) {
 		cerr << "Usage: " << argv[0] << " config_file input_file async" << endl;
-		cerr << "Example: " << argv[0] << " sample.cfg /dev/ttyS0 1" << endl;
-		cerr << "Example: " << argv[0] << " sample.cfg elo.log 0" << endl;
+		cerr << "Example: " << argv[0] << " sample.cfg /dev/ttyS0 0" << endl;
+		cerr << "Example: " << argv[0] << " sample.cfg elo.log 1" << endl;
 		exit(1);
 	}
 
