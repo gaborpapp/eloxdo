@@ -27,7 +27,7 @@ Xcom::Xcom(const string &configFileName_):
 	config.readInto_check(_tSVMultiplier,"TouchScreenVerticalMultiplier");
 
 	config.readInto(display,"Display"); //go with the default if not found
-	_myxdo = xdo_new(display.c_str());
+	_myxdo = xdo_new(const_cast<char *>(display.c_str()));
 
 	//delete _config;
 	}

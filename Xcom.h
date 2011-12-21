@@ -8,7 +8,7 @@
 #include <map>
 #include <string>
 extern "C" {
-	#include "xdotool/xdo.h"
+	#include "xdo.h"
 }
 
 class Xcom
