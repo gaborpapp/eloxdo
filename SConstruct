@@ -1,7 +1,15 @@
+# -*- mode: python; -*-
 Target = 'eloxdo'
+Debug = 1
 
 env = Environment()
-env.Append(CCFLAGS = '-O3 -Wall')
+
+CCFLAGS = ' -Wall '
+if Debug:
+        CCFLAGS += ' -ggdb2 -O0 -DDEBUG=1 '
+else:
+        CCFLAGS += ' -g0 -O3 '
+env.Append(CCFLAGS = CCFLAGS)
 
 LibList = [['xdo', 'xdo.h', 'C'],
 		   ['serial', 'SerialPort.h', 'C++']]

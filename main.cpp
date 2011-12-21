@@ -3,7 +3,9 @@
 #include <string.h>
 #include "Xcom.h"
 #include "L3Message.h"
-//#include "Debug/debug.h"
+#ifdef DEBUG
+#	include "Debug/debug.h"
+#endif
 #include "Elo.h"
 #include "DataReader_File.h"
 #include "DataReader_Serial.h"
