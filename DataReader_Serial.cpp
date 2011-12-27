@@ -6,8 +6,8 @@ using namespace std;
 using namespace LibSerial ;
 
 
-DataReader_Serial::DataReader_Serial(Elo *elo_, const string &inputFileName_):
-	DataReader_Base(elo_,new LibSerial::SerialStream(inputFileName_,ios::in), true)
+DataReader_Serial::DataReader_Serial(Elo *elo_, const string &inputFileName_, int algo_type_):
+	DataReader_Base(elo_,new LibSerial::SerialStream(inputFileName_,ios::in), algo_type_)
 {
 	LibSerial::SerialStream &serialPort = * (static_cast<LibSerial::SerialStream *>(_inputFileP));
 	if ( ! serialPort.good() )

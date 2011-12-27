@@ -11,11 +11,12 @@
 using namespace std;
 
 
-DataReader_Base::DataReader_Base(Elo *elo_,std::basic_istream<char> *inputFileP_, bool async_):
+//DataReader_Base::DataReader_Base(Elo *elo_,std::basic_istream<char> *inputFileP_, bool async_):
+DataReader_Base::DataReader_Base(Elo *elo_,std::basic_istream<char> *inputFileP_, int algo_type_):
 	_elo(elo_),
 	_packetno(0),
 	_inputFileP(inputFileP_),
-	_async(async_)
+	_algo_type(algo_type_)
 {}
 
 int DataReader_Base::read_one(){
@@ -28,7 +29,7 @@ int DataReader_Base::read_one(){
 	char *read_ptr = _packet;
 
 	while (_inputFileP->good()) {
-		if (_async)
+		if (_algo_type == 1)
 			while( !(_inputFileP->rdbuf()->in_avail()) )
 				usleep(1000) ;
 		//find sync byte
@@ -72,7 +73,7 @@ int DataReader_Base::read_one(){
 			} //if: enough bytes read
 			else {
 				DEBUG_STRING("NOT ENOUGH BYTES READ\n");
-				if (_async){
+				if (_algo_type == 1){
 					//we need to continue, by setting read_ptr appropriately
 					read_ptr=_packet+_inputFileP->gcount();
 				}
