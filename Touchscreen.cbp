@@ -18,7 +18,7 @@
 					<Add option="-DDEBUG" />
 				</Compiler>
 				<Linker>
-					<Add library="xdotool/libxdo.so" />
+					<Add library="/usr/lib/libxdo.so" />
 					<Add library="/usr/lib/libserial.so" />
 				</Linker>
 			</Target>
@@ -33,7 +33,7 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="xdotool/libxdo.so" />
+					<Add library="/usr/lib/libxdo.so" />
 					<Add library="/usr/lib/libserial.so" />
 				</Linker>
 			</Target>
@@ -42,8 +42,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="xdotool/libxdo.so" />
-		<Unit filename="xdotool/xdo.h" />
 		<Unit filename="ConfigFile/ConfigFile.cpp" />
 		<Unit filename="ConfigFile/ConfigFile.h" />
 		<Unit filename="ConfigPlus.cpp" />
@@ -65,6 +63,8 @@
 		<Unit filename="elo_consts.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="sample.cfg" />
+		<Unit filename="xdotool/libxdo.so" />
+		<Unit filename="xdotool/xdo.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
