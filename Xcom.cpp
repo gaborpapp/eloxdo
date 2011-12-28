@@ -27,15 +27,16 @@ Xcom::Xcom(const string &configFileName_):
 	config.readInto_check(_tSVMultiplier,"TouchScreenVerticalMultiplier");
 
 	config.readInto(display,"Display"); //go with the default if not found
-	_myxdo = xdo_new(const_cast<char *>(display.c_str()));
+	//_myxdo = xdo_new(const_cast<char *>(display.c_str()));
 
 	//delete _config;
 	}
 	catch (ConfigFile::key_not_found s) {
 		cerr << "*** Error: " << s.key << " not found in " << configFileName_ << endl;
-		if (_myxdo) delete _myxdo;
+		//if (_myxdo) delete _myxdo;
 		exit(1);
 	}
+	_myxdo = xdo_new(const_cast<char *>(display.c_str()));
 }
 
 
