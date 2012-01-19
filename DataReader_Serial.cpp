@@ -58,6 +58,13 @@ DataReader_Serial::DataReader_Serial(Elo *elo_, const string &inputFileName_, in
                   << std::endl ;
         exit(1) ;
     }
+
+    //////
+    //Now this is a hack. For some reason reading is not reliable if using SerialStream, so we switch to
+    //ifstream
+    delete _inputFileP;
+    _inputFileP = new std::ifstream(inputFileName_.c_str(),ios::in|ios::binary);
+
 }
 
 

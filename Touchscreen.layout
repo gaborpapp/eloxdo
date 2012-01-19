@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
 	<File name="ConfigPlus.cpp" open="0" top="0" tabpos="11">
 		<Cursor position="214" topLine="0" />
 	</File>
@@ -14,7 +14,7 @@
 		<Cursor position="150" topLine="1" />
 	</File>
 	<File name="DataReader_Base.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="485" topLine="0" />
+		<Cursor position="485" topLine="12" />
 	</File>
 	<File name="DataReader_Base.h" open="1" top="0" tabpos="9">
 		<Cursor position="380" topLine="0" />
@@ -25,8 +25,8 @@
 	<File name="DataReader_File.h" open="1" top="0" tabpos="6">
 		<Cursor position="215" topLine="0" />
 	</File>
-	<File name="DataReader_Serial.cpp" open="1" top="0" tabpos="12">
-		<Cursor position="417" topLine="0" />
+	<File name="DataReader_Serial.cpp" open="1" top="1" tabpos="12">
+		<Cursor position="597" topLine="15" />
 	</File>
 	<File name="DataReader_Serial.h" open="1" top="0" tabpos="11">
 		<Cursor position="247" topLine="0" />
@@ -43,8 +43,8 @@
 	<File name="L3Message.h" open="0" top="0" tabpos="14">
 		<Cursor position="237" topLine="0" />
 	</File>
-	<File name="Xcom.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="2027" topLine="53" />
+	<File name="Xcom.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1125" topLine="23" />
 	</File>
 	<File name="Xcom.h" open="1" top="0" tabpos="1">
 		<Cursor position="385" topLine="6" />
